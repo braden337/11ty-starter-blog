@@ -2,13 +2,7 @@
 
 ## Getting Started
 
-#### Clone this repository, and change into the directory
-
-```bash
-git clone https://github.com/braden337/11ty-starter-blog.git
-
-cd 11ty-starter-blog
-```
+Fork this repository, and download it to your computer.
 
 #### Install dependencies with `npm`
 
