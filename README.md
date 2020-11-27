@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-###### Clone this repository, and change into the directory
+#### Clone this repository, and change into the directory
 
 ```bash
 git clone https://github.com/braden337/11ty-starter-blog.git
@@ -10,13 +10,13 @@ git clone https://github.com/braden337/11ty-starter-blog.git
 cd 11ty-starter-blog
 ```
 
-###### Install dependencies with `npm`
+#### Install dependencies with `npm`
 
 ```bash
 npm install
 ```
 
-###### Start the live development server
+#### Start the live development server
 
 So you can view your blog in a browser while you work.
 
@@ -24,7 +24,7 @@ So you can view your blog in a browser while you work.
 npm start
 ```
 
-###### Deploy to Github pages
+#### Deploy to Github pages
 
 If your repository is named something like `your_username.github.io`, then you can run the below
 command without any problems. Your website will be available at `https://your_username.github.io/`.
@@ -50,7 +50,7 @@ return {
 };
 ```
 
-###### Images
+#### Images
 
 When linking to one of your images in an article, you must use the URL "helper":
 `{{ url /images/something.jpg }}`. You can do this in your markdown also.
@@ -62,7 +62,7 @@ When linking to one of your images in an article, you must use the URL "helper":
 This will make sure the `cat.jpg` in your `./src/images` directory has the correct path (if you are
 using a repository name other than `your_username.github.io`).
 
-###### RSS Feed
+#### RSS Feed
 
 You should update the variables at the top of the `./src/feed.njk` to reflect your own feed details.
 
