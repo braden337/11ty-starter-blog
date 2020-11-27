@@ -1,0 +1,62 @@
+body {
+  > header {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      > a {
+        margin-right: 2rem;
+
+        svg {
+          height: 2rem;
+          fill: $logo;
+          transition: fill ease 0.25s;
+        }
+
+        &:hover {
+          svg {
+            fill: $accent;
+          }
+        }
+      }
+
+      > ul {
+        font-size: 0.9rem;
+        list-style-type: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        line-height: 1.5rem;
+
+        li {
+          + li {
+            margin-left: 2.5rem;
+          }
+
+          a {
+            &:link,
+            &:visited {
+              color: $foreground;
+              text-decoration: none;
+              text-transform: uppercase;
+              font-weight: 600;
+              transition-property: color, border-bottom;
+              transition-duration: 0.1s;
+              transition-timing-function: ease;
+            }
+
+            &:hover {
+              color: $accent;
+              border-bottom: 0.2rem solid;
+            }
+
+            .icon {
+              transform: scale(1.3);
+            }
+          }
+        }
+      }
+    }
+  }
+}

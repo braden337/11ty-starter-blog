@@ -1,0 +1,34 @@
+---
+title: Archive
+date: 2020-10-12 00:00:00 -5
+---
+<div id="archive">
+  <h1>
+    The Archives
+  </h1>
+  <section id="tags"></section>
+  <section id="posts">
+    <ul>
+      {{#each collections.archive as |item|}}
+        {{#if item.url}}
+          <li class="post">
+            <a href={{url item.url}}>
+              <h2>
+                {{item.data.title}}
+              </h2>
+              <time datetime>
+                {{date item.date}}
+              </time>
+            </a>
+          </li>
+        {{else}}
+          <li class="year">
+            <h2>
+              {{item}}
+            </h2>
+          </li>
+        {{/if}}
+      {{/each}}
+    </ul>
+  </section>
+</div>

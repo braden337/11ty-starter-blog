@@ -1,0 +1,22 @@
+[
+  {
+    "description": "Cats",
+    "image_url": "https://placekitten.com/200/200"
+  },
+  {
+    "description": "Cats",
+    "image_url": "https://placekitten.com/300/300"
+  },
+  {
+    "description": "Cats",
+    "image_url": "https://placekitten.com/400/400"
+  },
+  {
+    "description": "Cats",
+    "image_url": "https://placekitten.com/600/600"
+  },
+  {
+    "description": "Cats",
+    "image_url": "https://placekitten.com/700/700"
+  }
+]

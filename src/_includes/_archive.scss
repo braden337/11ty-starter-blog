@@ -1,0 +1,53 @@
+div#archive {
+  max-width: 45rem;
+  display: flex;
+  flex-flow: column;
+
+  h1 {
+    font-weight: 800;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    list-style-type: none;
+
+    li {
+      grid-column: 2/-1;
+      padding: 1rem;
+      border-top: 1px solid #d0d0d0;
+
+      h2 {
+        font-weight: 600;
+      }
+
+      &.year {
+        grid-column: 1/2;
+      }
+
+      a {
+        text-decoration: none;
+        display: flex;
+        flex-flow: column;
+
+        &:hover {
+          h2 {
+            color: $accent;
+          }
+        }
+
+        * {
+          + * {
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  > * {
+    + * {
+      margin-top: 1rem;
+    }
+  }
+}

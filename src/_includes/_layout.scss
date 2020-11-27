@@ -1,0 +1,11 @@
+body {
+  padding: 1.8rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+  grid-gap: 2rem;
+}
+
+main > * {
+  margin: auto;
+}

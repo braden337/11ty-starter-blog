@@ -1,0 +1,5 @@
+{
+  "layout": "post.hbs",
+  "tags": "post",
+  "permalink": "/{{yearSlashMonth page.date}}/{{slug title}}/"
+}

@@ -1,0 +1,21 @@
+---
+layout: base.hbs
+---
+<article>
+  <header>
+    <h1>
+      {{title}}
+    </h1>
+    <div class="post-meta">
+      Posted
+      <time datetime data-date="{{page.date}}">
+        a while ago
+      </time>
+      by
+      <span class="author">
+        {{site.author}}
+      </span>
+    </div>
+  </header>
+  {{{content}}}
+</article>

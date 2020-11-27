@@ -1,0 +1,36 @@
+<footer>
+  <nav>
+    <ul>
+      {{#each collections.page as |page|}}
+        <li>
+          <a href={{url page.url}}>
+            {{page.data.title}}
+          </a>
+        </li>
+      {{/each}}
+      <li>
+        <a href={{url "/feed.xml"}}>
+          Feed
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <nav>
+    <ul>
+      <li>
+        © 2020
+        {{site.author}}
+      </li>
+      <li>
+        <a href={{site.social.twitter}}>
+          Twitter
+        </a>
+      </li>
+      <li>
+        <a href={{site.social.github}}>
+          Github
+        </a>
+      </li>
+    </ul>
+  </nav>
+</footer>

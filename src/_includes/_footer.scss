@@ -1,0 +1,40 @@
+body {
+  > footer {
+    margin-top: 4rem;
+    display: flex;
+    flex-flow: column;
+    font-size: 0.85rem;
+
+    nav {
+      display: flex;
+
+      ul {
+        list-style-type: none;
+        display: flex;
+
+        li {
+          + li {
+            &::before {
+              padding: 0 0.25rem 0 0;
+              content: '•';
+            }
+          }
+
+          &:hover {
+            a {
+              color: $accent;
+            }
+          }
+        }
+      }
+
+      * + * {
+        margin-left: 0.25rem;
+      }
+    }
+
+    > * + * {
+      margin-top: 0.85rem;
+    }
+  }
+}

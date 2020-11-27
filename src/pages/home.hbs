@@ -1,0 +1,63 @@
+---
+title: Home
+permalink: /
+date: 2020-10-11 00:00:00 -5
+---
+<div id="home">
+  <section id="intro">
+    <img src={{url "/images/coding.jpg"}} alt="" />
+    <h1>
+      I'm
+      {{site.author}}
+      ,
+      <a href={{site.social.github}}>
+        software
+      </a>
+      developer, student at
+      <a href="">
+        somewhere
+      </a>
+      , Lorem ipsum dolor sit amet, and
+      <a href="https://tesla.com">
+        something
+      </a>
+      enthusiast.
+    </h1>
+  </section>
+  <section id="latest">
+    <header>
+      <h3>
+        Latest
+      </h3>
+      <a href={{url "/archive/"}}>
+        View Archive
+      </a>
+    </header>
+    <ul>
+      {{#each collections.latest as |post|}}
+        <li>
+          <a href={{url post.url}}>
+            {{post.data.title}}
+          </a>
+          <time datetime>
+            {{date post.date}}
+          </time>
+        </li>
+      {{/each}}
+    </ul>
+  </section>
+  <section id="interests">
+    <header>
+      <h3>
+        Interests
+      </h3>
+    </header>
+    <ul>
+      {{#each interests as |interest|}}
+        <li>
+          <img src={{url interest.image_url}} alt={{interest.description}} />
+        </li>
+      {{/each}}
+    </ul>
+  </section>
+</div>

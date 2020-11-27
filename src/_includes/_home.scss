@@ -1,0 +1,152 @@
+div#home {
+  max-width: 70rem;
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(7, 1fr);
+
+  > section {
+    h3 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    header {
+      padding: 0 0 0.5rem;
+    }
+  }
+
+  > section#intro {
+    grid-column: 1 / -1;
+    display: grid;
+    align-items: center;
+
+    @media (min-width: 600px) {
+      grid-gap: 2rem;
+      grid-template-columns: minmax(250px, 1fr) 3fr;
+    }
+
+    h1 {
+      padding: 1rem 0;
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 2.3rem;
+
+      a {
+        &:link,
+        &:visited {
+          text-decoration: none;
+          color: $accent;
+          border-bottom: 0.2rem solid $softborder;
+        }
+        &:hover {
+          border-bottom-width: 0.25rem;
+        }
+      }
+
+      @media (min-width: 600px) {
+        font-size: clamp(1rem, 4vw, 3rem);
+        line-height: clamp(1rem, 5vw, 3.5rem);
+      }
+    }
+  }
+
+  > section#latest {
+    grid-column: 1/-1;
+
+    @media (min-width: 600px) {
+      grid-column: 1/7;
+    }
+
+    @media (min-width: 800px) {
+      grid-column: 1/5;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+        display: block;
+        background-color: $accent;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 0.8rem;
+        padding: 0.3rem;
+
+        &:link,
+        &:visited {
+          color: $background;
+          text-decoration: none;
+        }
+
+        &::after {
+          content: '>';
+        }
+      }
+    }
+
+    ul {
+      list-style-type: none;
+
+      li {
+        padding: 1rem 0;
+        border-bottom: 1px solid #d0d0d0;
+        display: flex;
+        flex-flow: column;
+
+        &:first-child {
+          border-top: 1px solid #d0d0d0;
+        }
+
+        a {
+          font-size: 1.5rem;
+          font-weight: 600;
+
+          &:link,
+          &:visited {
+            text-decoration: none;
+            color: $foreground;
+          }
+
+          &:hover {
+            color: $accent;
+          }
+        }
+
+        * + * {
+          margin-top: 0.3rem;
+        }
+      }
+    }
+  }
+
+  > section#interests {
+    grid-column: 1/-1;
+
+    @media (min-width: 600px) {
+      grid-column: 7/ -1;
+    }
+
+    @media (min-width: 800px) {
+      grid-column: 5/ -1;
+    }
+
+    ul {
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
+
+      @media (min-width: 600px) and (max-width: 800px) {
+        grid-template-columns: 1fr;
+      }
+
+      li {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "layout": "base.hbs",
+  "tags": "page",
+  "permalink": "/{{slug title}}/"
+}
